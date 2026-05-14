@@ -147,7 +147,7 @@ def main():
         st.metric("Global Average Rating", f"{avg_rating_overall:.2f}" if pd.notna(avg_rating_overall) else "N/A")
     with kpi4:
         avg_mrp = df_filtered['MRP'].mean()
-        st.metric("Average MRP", f"?{avg_mrp:.2f}" if pd.notna(avg_mrp) else "N/A")
+        st.metric("Average MRP", f"{avg_mrp:.2f}" if pd.notna(avg_mrp) else "N/A")
 
     st.markdown("---")
 
